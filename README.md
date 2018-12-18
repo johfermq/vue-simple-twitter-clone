@@ -1,4 +1,4 @@
-# VueCli3
+# Vue Simple Twitter Clone
 
 ## Project setup
 ```
