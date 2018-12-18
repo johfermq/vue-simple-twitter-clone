@@ -1,29 +1,30 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <!-- <div class="ui stackable three column centered grid container">
+      <div class="ui secondary menu">
+        <router-link to="/" class="item" tag="a">Home</router-link>
+        <router-link to="/register" class="item" tag="a">Register</router-link>
+        <router-link to="/login" class="item" tag="a">Login</router-link>
+      </div>
+    </div> -->
     <router-view/>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+    export default {
+        name: 'app'
     }
-  }
-}
+</script>
+
+<style lang="scss">
+	body {
+        background-color: #f7f7f7;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .is-danger {
+        color: #9f3a38;
+    }
 </style>
